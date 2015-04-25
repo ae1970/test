@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+php_flag display_errors On
+#показать все ошибки кроме предупреждений (Notice)
+php_value error_reporting "E_ALL & ~E_NOTICE"
+RewriteCond %{REQUEST_URI} ^.+
+RewriteRule ^(.*)/$ /$1 [L,R=301]

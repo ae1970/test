@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Subscription - Регистрация</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <p>Enter your first name, last name, and email to be added to the <strong>Subscription</strong> mailing list.</p>
+  <form method="post" action="addemail.php">
+    <label for="email">Email*:</label>
+    <input type="text" id="email" name="email" /><br />
+    <label for="firstname">First name*:</label>
+    <input type="text" id="firstname" name="firstname" /><br />
+    <label for="lastname">Last name*:</label>
+    <input type="text" id="lastname" name="lastname" /><br />
+	<label for="country">Страна*:</label>
+	<select name="country" size = "1" >
+<option value='Россия'>Россия</option>
+<option value='Казахстан'>Казахстан</option>
+<option value='Республика Молдова'>Республика Молдова</option>
+<option value='Украина'>Украина</option>
+<option value='Монголия'>Mongolia</option>
+</select><br />
+	<label for="company">Компания*:</label>
+    <input type="text" id="company" name="company" /><br />
+	<label for="rd">Род деятельности*:</label>
+	<select name="rd" size = "1" >
+<option value='Банкир'>Род деятельности 1</option>
+<option value='Рабочий'>Род деятельности 2</option>
+<option value='Студент'>Род деятельности 3</option>
+</select><br />
+    <label for="prof">Должность*:</label>
+    <input type="text" id="prof" name="prof" /><br />
+	<label for="address">Адрес*:</label>
+    <input type="text" id="address" name="address" /><br />
+	<label for="address2">Адрес 2:</label> <!-- Необязательно -->
+    <input type="text" id="address2" name="address2" /><br />
+		<label for="city">Город*:</label>
+    <input type="text" id="city" name="city" /><br />
+		<label for="post_index">Почтовый индекс*:</label>
+    <input type="text" id="post_index" name="post_index" /><br />
+		<label for="work_phone">Рабочий телефон*:</label>
+    <input type="text" id="work_phone" name="work_phone" /><br />
+	
+    <input type="submit" name="Submit" value="Отправить" />
+  </form>
+</body>
+</html>
